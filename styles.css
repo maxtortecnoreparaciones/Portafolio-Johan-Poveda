@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+header, section {
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #333;
+    font-size: 2em;
+    text-align: center;
+}
+
+h3 {
+    color: #444;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    margin-left: 20px;
+}
+
+.job {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+}
+
+@media (max-width: 768px) {
+    h1, h2, h3, p {
+        text-align: center;
+    }
+}
