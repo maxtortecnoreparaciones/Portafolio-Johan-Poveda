@@ -4,7 +4,166 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio - Johan Ernesto Poveda</title>
-    <link rel="stylesheet" href="styles.css">
+ <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+      color: #f5f5f5;
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+    
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    
+    header {
+      background: rgba(15, 52, 96, 0.9);
+      padding: 60px 20px;
+      text-align: center;
+      border-radius: 15px;
+      margin-bottom: 30px;
+      box-shadow: 0 8px 32px rgba(233, 69, 96, 0.2);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(233, 69, 96, 0.3);
+    }
+    
+    header h1 {
+      font-size: 2.8em;
+      margin-bottom: 15px;
+      background: linear-gradient(45deg, #e94560, #00d9ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      animation: gradient 3s ease infinite;
+    }
+    
+    @keyframes gradient {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    
+    header h2 {
+      font-size: 1.5em;
+      color: #00d9ff;
+      margin-bottom: 15px;
+    }
+    
+    header p {
+      font-size: 1.1em;
+      color: #dcdcdc;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    
+    section {
+      background: rgba(15, 52, 96, 0.6);
+      padding: 30px;
+      margin-bottom: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+      border-left: 4px solid #e94560;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    section:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 30px rgba(233, 69, 96, 0.3);
+    }
+    
+    h3 {
+      color: #e94560;
+      font-size: 1.8em;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #00d9ff;
+      padding-bottom: 10px;
+    }
+    
+    ul {
+      list-style: none;
+    }
+    
+    ul li {
+      padding: 12px 0;
+      border-bottom: 1px solid rgba(233, 69, 96, 0.3);
+      transition: padding-left 0.3s ease;
+    }
+    
+    ul li:hover {
+      padding-left: 15px;
+      color: #00d9ff;
+    }
+    
+    ul li:last-child {
+      border-bottom: none;
+    }
+    
+    a {
+      color: #00d9ff;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      font-weight: 600;
+    }
+    
+    a:hover {
+      color: #e94560;
+      text-shadow: 0 0 10px rgba(0, 217, 255, 0.5);
+    }
+    
+    .job {
+      margin-bottom: 25px;
+      padding: 20px;
+      background: rgba(20, 20, 40, 0.5);
+      border-radius: 8px;
+      border-left: 3px solid #00d9ff;
+    }
+    
+    .job h4 {
+      color: #00d9ff;
+      font-size: 1.3em;
+      margin-bottom: 8px;
+    }
+    
+    .job p {
+      color: #e94560;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+    
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: rgba(15, 52, 96, 0.9);
+      border-radius: 12px;
+      margin-top: 30px;
+      border-top: 3px solid #e94560;
+    }
+    
+    footer p {
+      color: #dcdcdc;
+    }
+    
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2em;
+      }
+      header h2 {
+        font-size: 1.2em;
+      }
+      section {
+        padding: 20px;
+      }
+    }
+  </style>
 </head>
 <body>
 
